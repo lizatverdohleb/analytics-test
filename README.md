@@ -9,7 +9,7 @@ JOIN Pass_in_trip
     ON Passenger.id=Pass_in_trip.passenger
 GROUP BY passenger
 HAVING COUNT(trip) > 0
-ORDER BY COUNT(trip) DESC, name
+ORDER BY COUNT(trip) DESC, name;
 ```
 
 ## SQL. Задание 2
@@ -21,7 +21,7 @@ SELECT DISTINCT TIMEDIFF(
                 (SELECT start_pair FROM Timepair WHERE id=2)
                 ) 
                 AS time
-FROM Timepair
+FROM Timepair;
 ```
 
 ## SQL. Задание 4
@@ -34,5 +34,5 @@ HAVING COUNT(classroom) =
     (SELECT COUNT(classroom) 
     FROM Schedule 
     GROUP BY classroom
-    ORDER BY COUNT(classroom) DESC LIMIT 1)
+    ORDER BY COUNT(classroom) DESC LIMIT 1);
 ```
