@@ -9,8 +9,21 @@ JOIN Pass_in_trip
     ON Passenger.id=Pass_in_trip.passenger
 GROUP BY passenger
 HAVING COUNT(trip) > 0
-ORDER BY COUNT(trip) DESC, name;
+ORDER BY COUNT(trip) DESC, name
 ```
+
+## SQL. Задание 2
+Сколько времени обучающийся будет находиться в школе, 
+учась со 2-го по 4-ый уч. предмет ?
+```
+SELECT DISTINCT TIMEDIFF( 
+                (SELECT end_pair FROM Timepair WHERE id=4),
+                (SELECT start_pair FROM Timepair WHERE id=2)
+                ) 
+                AS time
+FROM Timepair
+```
+
 ## SQL. Задание 4
 Какой(ие) кабинет(ы) пользуются самым большим спросом?
 ```
