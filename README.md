@@ -48,7 +48,7 @@ HAVING COUNT(classroom) =
 
 ## SQL. Задание 6
 Cоставить отчет о битвах кораблей в два суперстолбца. ссылка на задачу
-(https://user-images.githubusercontent.com/34777132/142909701-23477282-79a8-41b9-acd1-36f4ff507b36.png)
+(https://www.sql-ex.ru/learn_exercises.php)
 ```
 
 .....
