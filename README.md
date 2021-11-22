@@ -22,4 +22,4 @@ HAVING COUNT(classroom) =
     FROM Schedule 
     GROUP BY classroom
     ORDER BY COUNT(classroom) DESC LIMIT 1)
-    ```
+```
